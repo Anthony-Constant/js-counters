@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counters</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Make sure to include your custom CSS file -->
+</head>
+<body>
+    <!-- Counters Section -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-5 mb-md-0">
+                    <h5 class="fw-bold">Feedback <i class="fa-regular fa-face-smile"></i> </h5> 
+                    <p class="counter-value fw-bold display-4"><span id="counter-value1" count-to="930">0</span>+</p>
+                </div>
+                <div class="col-md-4 mb-5 mb-md-0">
+                    <h5 class="fw-bold">Sales <i class="fa-solid fa-chart-line"></i></h5>
+                    <p class="counter-value fw-bold display-4"><span id="counter-value2" count-to="3000">0</span>+</p>
+                </div>
+                <div class="col-md-4 mb-5 mb-md-0">
+                    <h5 class="fw-bold">Followers <i class="fa-regular fa-heart"></i></h5>
+                    <p class="counter-value fw-bold display-4"><span id="counter-value3" count-to="102">0</span>+</p>
+
+                </div>
+            </div>
+            <p>Copyright &copy; AnthonyConstant.co.uk 2024</p>
+
+        </div>
+    </section>
+
+    <!-- External Libraries and Scripts -->
+    <!-- jQuery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script>
+        // Function to animate counter values
+        function animateCounter(id, targetValue) {
+            $({ countNum: $(id).text() }).animate({ countNum: targetValue }, {
+                duration: 2000,
+                easing: 'linear',
+                step: function () {
+                    $(id).text(Math.floor(this.countNum));
+                },
+                complete: function () {
+                    $(id).text(targetValue);
+                }
+            });
+        }
+
+        // Call animateCounter function for each counter
+        $(document).ready(function () {
+            animateCounter('#counter-value1', 930);
+            animateCounter('#counter-value2', 3000);
+            animateCounter('#counter-value3', 102);
+        });
+    </script>
+
+
+</body>
+</html>
