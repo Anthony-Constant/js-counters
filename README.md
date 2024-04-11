@@ -40,7 +40,7 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ## Acknowledgements
 
-The Secure Password Generator was developed by [Anthony Constant](https://anthonyconstant.co.uk/).
+The Counters script was developed by [Anthony Constant](https://anthonyconstant.co.uk/).
 
 ## Support My Work
 
