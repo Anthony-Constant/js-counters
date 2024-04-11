@@ -34,3 +34,18 @@ The project relies on the following dependencies:
 
 Ensure these dependencies are included in your project for proper functionality.
 
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+## Acknowledgements
+
+The Secure Password Generator was developed by [Anthony Constant](https://anthonyconstant.co.uk/).
+
+## Support My Work
+
+If you like this repository or have used any of the code, please consider showing your support:
+
+- Give it a star ⭐️ to acknowledge its value.
+- You can also support me by [buying me a coffee ☕️](https://ko-fi.com/W7W144CAO).
+
